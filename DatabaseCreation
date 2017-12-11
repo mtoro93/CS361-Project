@@ -1,0 +1,104 @@
+CREATE TABLE opportunities (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+oppTitle VARCHAR(50) NOT NULL,
+oppField VARCHAR(50) NOT NULL,
+oppStart DATE,
+oppEnd DATE,
+oppDescription VARCHAR(1000),
+oppExpire DATE,
+oppStreet VARCHAR(50),
+oppCity VARCHAR(50),
+oppState VARCHAR(50),
+oppCountry VARCHAR(50),
+oppZip INT(12),
+oppRemote VARCHAR(3),
+CONSTRAINT check_dates check (oppStart < oppEnd)
+)ENGINE=InnoDB;
+
+ALTER TABLE opportunities ADD FULLTEXT(oppTitle);
+ALTER TABLE opportunities ADD FULLTEXT(oppField);
+ALTER TABLE opportunities ADD FULLTEXT(oppDescription);
+ALTER TABLE opportunities ADD FULLTEXT(oppCity);
+ALTER TABLE opportunities ADD FULLTEXT(oppState);
+
+
+INSERT INTO opportunities (oppTitle, oppField, oppStart, oppEnd, 
+    oppDescription, oppExpire, oppStreet, oppCity, oppState, oppCountry, 
+    oppZip, oppRemote) VALUES
+('Marketing', 'Marketing', '2017-11-16', '2017-11-17', 
+    'We are seeking a marketing expert to do some marketing.', '2017-11-17', 
+    '100 Main St.', 'Corvallis', 'OR', 'US', 90210, 'no'),
+('Fisher', 'Fishing', '2017-11-16', '2017-11-17', 
+    'Catch some fish for us.', '2017-11-17', 
+    '205 7th St.', 'Corvallis', 'OR', 'US', 90210, 'no'),
+('Programmer', 'Computer Science', '2017-11-16', '2017-11-17', 
+    'This opportunity will require a programmer to do some programming.', '2017-11-17', 
+    '9000 1st Ave.', 'New York', 'NY', 'US', 99999, 'yes');
+    
+    
+    
+    CREATE TABLE volunteers (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+firstName VARCHAR(50) NOT NULL,
+lastName VARCHAR(50) NOT NULL,
+resume VARCHAR(5000),
+street VARCHAR(50) NOT NULL,
+city VARCHAR(50) NOT NULL,
+state VARCHAR(50) NOT NULL,
+country VARCHAR(50) NOT NULL,
+zip INT(12) NOT NULL,
+remote VARCHAR(3) NOT NULL,
+)ENGINE=InnoDB;
+
+INSERT INTO volunteers (firstName, lastName, resume, street, city, state, country, 
+zip, remote) VALUES
+
+('John', 'Doe', 'I am a very good person, please hire me', '1234 Main St', 
+'Corvallis', 'OR', 'US', 90210, 'yes'),
+('Melissa', 'Douglas', 'Communications and Marketing expert', '555 SW Mass Blvd', 
+'Portand', 'OR', 'US', 97202, 'no'),
+('Jody', 'Moose', 'PHP and mySQL beginner', '324 E St', 
+'Cleveland', 'OH', 'US', 34567, 'yes'),
+('Brandon', 'Taylor', 'Fundraising professional', '1776 Independence Ave', 
+'Albany', 'NY', 'US', 19456, 'yes'),
+('Phillip', 'Rodriquez', 'Registered Nurse', '7889 Clinton Dr', 
+'Eugene', 'OR', 'US', 97401, 'yes');
+
+
+
+
+
+CREATE TABLE opp_vol (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+opp_id INT(6) UNSIGNED NOT NULL,
+vol_id INT(6) UNSIGNED NOT NULL,
+CONSTRAINT opp_id_fk FOREIGN KEY (opp_id) REFERENCES opportunities (id),
+CONSTRAINT vol_id_fk FOREIGN KEY (vol_id) REFERENCES volunteers (id),
+CONSTRAINT one_max_app_per_opp UNIQUE (opp_id, vol_id)
+)ENGINE=InnoDB;
+
+INSERT INTO opp_vol (opp_id, vol_id) VALUES
+(1, 2),
+(1, 4),
+(1, 5),
+(2, 1),
+(2, 4),
+(3,1),
+(4, 5),
+(6, 5),
+(6, 2),
+(6, 1),
+(7, 3),
+(7, 2),
+(8, 1),
+(8, 2),
+(8, 3),
+(8, 4),
+(8, 5),
+(9, 1),
+(10, 1),
+(11, 2),
+(12, 3),
+(13, 3),
+(13, 4),
+(13, 5);

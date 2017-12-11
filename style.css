@@ -1,0 +1,206 @@
+body {background-color: white;}
+
+input[type=text] {
+ 
+    border: none;
+    background-color: #AAAAAA;
+    color: black;
+}
+
+textarea {
+ 
+    border: none;
+    background-color: #AAAAAA;
+    color: black;
+}
+input[type=date] {
+ 
+    border: none;
+    background-color: #AAAAAA;
+    color: black;
+}
+
+.searchForm {
+    margin: 0 auto;
+
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+
+}
+
+.middleContent{
+    left: 0;
+    right: 0;
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 50px;
+    float:left;
+}
+
+.oppTitle {
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+    margin: 2px;
+}
+
+.oppDescription {
+    margin: 2px;
+}
+
+.searchButton {
+    padding: 4px;
+    margin-top: 5px;
+    color: blue;
+    font-size: 14px;
+}
+
+.searchField {
+    height: 25px;
+    width: 300px;
+    padding: 5px;
+    margin: 3px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;         
+}
+
+.navigation{
+    float: left;
+    outline: black;
+    outline-style: auto;
+    margin: 20px;
+    padding: 10px;
+}
+
+.article{
+   float:left;
+}
+
+.signupButton{
+      font: bold 16px Arial;
+      text-decoration: none;
+      background-color: #EEEEEE;
+      color: #333333;
+      padding: 2px 6px 2px 6px;
+      border-top: 1px solid #CCCCCC;
+      border-right: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      border-left: 1px solid #CCCCCC;
+}
+
+.form {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 15px;
+    margin-left: 100px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+
+}
+
+.button {
+    padding: 4px;
+    margin-top: 5px;
+    color: blue;
+    font-size: 14px;
+}
+
+.opportunityBox {
+    margin:2px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.navigation>ul {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    /* background-color: #000000; */
+    margin-right: 30px;
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.oppApplyButton{
+    margin: 2px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.oppApplyButton button{
+    padding: 5px;
+    /* box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19); */
+    -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+    background: -moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background: -webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background: -o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background: -ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+    background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+    background-color: #f9f9f9;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.oppApplyButton button:hover{
+    color:white;
+    background:#4277f4;
+    border-color: #4277f4;
+}
+
+.navigation a:hover {
+    color: blue;
+    
+}
+
+.resultsBox{
+    border: none;
+}
+.appButton {display:inline}
+
+.advancedSearchButton {
+        color: blue;
+        text-decoration: none;
+        font-size: small; 
+        margin: 0;
+}
+
+.advancedSearchButton {
+        color: blue;
+        text-decoration: none;
+        font-size: small; 
+        margin: 0;
+}
+
+.advancedSearchButton:hover {
+
+    text-decoration: underline;
+}
+
+.advancedSearchForm {
+    font-size: medium;
+}

@@ -1,0 +1,56 @@
+CREATE TABLE opportunities (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+oppTitle VARCHAR(50) NOT NULL,
+oppField VARCHAR(50) NOT NULL,
+oppStart DATE,
+oppEnd DATE,
+oppDescription VARCHAR(1000),
+oppExpire DATE,
+oppStreet VARCHAR(50),
+oppCity VARCHAR(50),
+oppState VARCHAR(50),
+oppCountry VARCHAR(50),
+oppZip INT(12),
+oppRemote VARCHAR(3),
+CONSTRAINT check_dates check (oppStart < oppEnd)
+)ENGINE=InnoDB;
+
+ALTER TABLE opportunities ADD FULLTEXT(oppTitle);
+ALTER TABLE opportunities ADD FULLTEXT(oppField);
+ALTER TABLE opportunities ADD FULLTEXT(oppDescription);
+
+INSERT INTO opportunities (oppTitle, oppField, oppStart, oppEnd, 
+    oppDescription, oppExpire, oppStreet, oppCity, oppState, oppCountry, 
+    oppZip, oppRemote) VALUES
+('Marketing', 'Marketing', '2017-11-16', '2017-11-17', 
+    'We are seeking a marketing expert to do some marketing.', '2017-11-17', 
+    '100 Main St.', 'Corvallis', 'OR', 'US', 90210, 'no'),
+('Fisher', 'Fishing', '2017-11-16', '2017-11-17', 
+    'Catch some fish for us.', '2017-11-17', 
+    '205 7th St.', 'Corvallis', 'OR', 'US', 90210, 'no'),
+('Programmer', 'Computer Science', '2017-11-16', '2017-11-17', 
+    'This opportunity will require a programmer to do some programming.', '2017-11-17', 
+    '9000 1st Ave.', 'New York', 'NY', 'US', 99999, 'yes');
+    
+    
+    
+    CREATE TABLE volunteers (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+firstName VARCHAR(50) NOT NULL,
+lastName VARCHAR(50) NOT NULL,
+resume VARCHAR(5000),
+street VARCHAR(50) NOT NULL,
+city VARCHAR(50) NOT NULL,
+state VARCHAR(50) NOT NULL,
+country VARCHAR(50) NOT NULL,
+zip INT(12) NOT NULL,
+remote VARCHAR(3) NOT NULL,
+opp1 INT(6),
+opp2 INT(6),
+opp3 INT(6)
+)ENGINE=InnoDB;
+
+INSERT INTO volunteers (firstName, lastName, resume, street, city, state, country, 
+zip, remote) VALUES
+('John', 'Doe', 'I am a very good person, please hire me', '1234 Main St', 
+'Corvallis', 'OR', 'US', 90210, 'yes');

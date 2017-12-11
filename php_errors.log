@@ -1,0 +1,41 @@
+[18-Nov-2017 00:15:06 UTC] PHP Warning:  require(commonFuncsphp): failed to open stream: No such file or directory in /home/ubuntu/workspace/modularized_version/index_mod.php on line 2
+[18-Nov-2017 00:15:06 UTC] PHP Stack trace:
+[18-Nov-2017 00:15:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/index_mod.php:0
+[18-Nov-2017 00:15:06 UTC] PHP Fatal error:  require(): Failed opening required 'commonFuncsphp' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/modularized_version/index_mod.php on line 2
+[18-Nov-2017 00:15:06 UTC] PHP Stack trace:
+[18-Nov-2017 00:15:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/index_mod.php:0
+[18-Nov-2017 00:28:43 UTC] PHP Fatal error:  Call to undefined function connect_db_mysqli() in /home/ubuntu/workspace/modularized_version/postOpp_mod.php on line 2
+[18-Nov-2017 00:28:43 UTC] PHP Stack trace:
+[18-Nov-2017 00:28:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/postOpp_mod.php:0
+[18-Nov-2017 00:28:52 UTC] PHP Fatal error:  Call to undefined function connect_db_mysqli() in /home/ubuntu/workspace/modularized_version/postOpp_mod.php on line 2
+[18-Nov-2017 00:28:52 UTC] PHP Stack trace:
+[18-Nov-2017 00:28:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/postOpp_mod.php:0
+[18-Nov-2017 00:31:14 UTC] PHP Fatal error:  Call to undefined function connect_db_mysqli() in /home/ubuntu/workspace/modularized_version/completePost_mod.php on line 2
+[18-Nov-2017 00:31:14 UTC] PHP Stack trace:
+[18-Nov-2017 00:31:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/completePost_mod.php:0
+[18-Nov-2017 00:52:57 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/ubuntu/workspace/modularized_version/notlogSearch_mod.php on line 3
+[21-Nov-2017 03:34:14 UTC] PHP Fatal error:  Call to undefined method mysqli_stmt::bindParam() in /home/ubuntu/workspace/modularized_version/test.php on line 32
+[21-Nov-2017 03:34:14 UTC] PHP Stack trace:
+[21-Nov-2017 03:34:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/test.php:0
+[21-Nov-2017 04:00:36 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of variables doesn't match number of parameters in prepared statement in /home/ubuntu/workspace/modularized_version/completePost_mod.php on line 19
+[21-Nov-2017 04:00:36 UTC] PHP Stack trace:
+[21-Nov-2017 04:00:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/completePost_mod.php:0
+[21-Nov-2017 04:00:36 UTC] PHP   2. mysqli_stmt->bind_param() /home/ubuntu/workspace/modularized_version/completePost_mod.php:19
+[21-Nov-2017 04:00:36 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of variables doesn't match number of parameters in prepared statement in /home/ubuntu/workspace/modularized_version/completePost_mod.php on line 23
+[21-Nov-2017 04:00:36 UTC] PHP Stack trace:
+[21-Nov-2017 04:00:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/completePost_mod.php:0
+[21-Nov-2017 04:00:36 UTC] PHP   2. mysqli_stmt->bind_param() /home/ubuntu/workspace/modularized_version/completePost_mod.php:23
+[21-Nov-2017 04:02:32 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of variables doesn't match number of parameters in prepared statement in /home/ubuntu/workspace/modularized_version/completePost_mod.php on line 18
+[21-Nov-2017 04:02:32 UTC] PHP Stack trace:
+[21-Nov-2017 04:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/completePost_mod.php:0
+[21-Nov-2017 04:02:32 UTC] PHP   2. mysqli_stmt->bind_param() /home/ubuntu/workspace/modularized_version/completePost_mod.php:18
+[21-Nov-2017 04:02:32 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of variables doesn't match number of parameters in prepared statement in /home/ubuntu/workspace/modularized_version/completePost_mod.php on line 22
+[21-Nov-2017 04:02:32 UTC] PHP Stack trace:
+[21-Nov-2017 04:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/completePost_mod.php:0
+[21-Nov-2017 04:02:32 UTC] PHP   2. mysqli_stmt->bind_param() /home/ubuntu/workspace/modularized_version/completePost_mod.php:22
+[21-Nov-2017 04:04:38 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /home/ubuntu/workspace/modularized_version/test.php on line 19
+[21-Nov-2017 04:04:38 UTC] PHP Stack trace:
+[21-Nov-2017 04:04:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/modularized_version/test.php:0
+[21-Nov-2017 04:04:38 UTC] PHP   2. mysqli_stmt->bind_result() /home/ubuntu/workspace/modularized_version/test.php:19
+[21-Nov-2017 04:13:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modularized_version/completePost_mod.php on line 77
+[21-Nov-2017 04:13:37 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modularized_version/completePost_mod.php on line 77
